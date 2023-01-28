@@ -1,5 +1,8 @@
+import javax.lang.model.util.ElementScanner6;
 
 public class HardcodedLogin {
+    private boolean login;
+
     /**
      * This challenge represents a hardcoded login example:
      *
@@ -15,6 +18,20 @@ public class HardcodedLogin {
      * @return true if there is a successful login, and false otherwise.
      */
     public boolean login(String username, String password){
+        if(username=="admin" && password == "qwerty"){
+            return true;
+        }else if(username=="user" && password == "password"){
+        return true;
+    }else{
         return false;
     }
 }
+
+    public static void main(String[] args){
+        // HardcodedLogin h = new HardcodedLogin();
+        // System.out.println(h.login("admin", "qwerty"));
+        // System.out.println(h.login("user", "password"));
+    }
+}
+
+
