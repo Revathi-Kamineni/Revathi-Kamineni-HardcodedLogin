@@ -1,8 +1,6 @@
-import javax.lang.model.util.ElementScanner6;
+
 
 public class HardcodedLogin {
-    private boolean login;
-
     /**
      * This challenge represents a hardcoded login example:
      *
